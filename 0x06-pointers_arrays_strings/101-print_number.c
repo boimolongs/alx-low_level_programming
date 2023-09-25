@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_interger - prints an integer;
+ * print_number - prints an integer;
  * @n: integer to be printed;
  */
-void print_integer(int n)
+void print_number(int n)
 {
 	unsigned int n1;
 
@@ -18,7 +18,7 @@ void print_integer(int n)
 	}
 
 	if (n1 / 10)
-		print_integer(n1 / 10);
+		print_number(n1 / 10);
 
 	_putchar((n1 % 10) + '0');
 }
